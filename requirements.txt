@@ -3,4 +3,4 @@ matplotlib
 scikit-learn
 numpy
 seaborn
-psycopg2
+psycopg2-binary
