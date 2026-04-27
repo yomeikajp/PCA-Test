@@ -85,7 +85,7 @@ def show_ellipse(X_pca, y, pca, nstd=3, show_arrow=True,scale=1):
                 head_width=0.04,
                 head_length=0.03
             )
-
+            ax.text(coeff[i, 0] * scale * 0.6, coeff[i, 1] * scale * 0.6, iris.feature_names[i], color='red')
     ax.set_xlim(-1, 1)
     ax.set_ylim(-1, 1)
 
