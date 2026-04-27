@@ -70,7 +70,7 @@ def show_ellipse(X_pca, y, pca, nstd=3, show_arrow=True,scale=1):
             label=category_label[i],
             markersize=8
         )
-
+        ax.text(coeff[i, 0] * scale * 0.6, coeff[i, 1] * scale * 0.6, iris.feature_names[i], color='red')
         plot_point_cov(data[y == i], nstd=nstd, ax=ax, alpha=0.25, color=colors[i])
 
     # PCA箭头
